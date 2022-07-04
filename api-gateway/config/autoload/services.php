@@ -59,7 +59,7 @@ return [
                 'config' => null,
             ],
             // 命名空间,public为默认系统空间
-            'group_name' => 'api',
+            'group_name' => 'dev',
             // 命名空间ID
              'namespace_id' => env('NACOS_TENANT'),
             // 心跳检查秒数

@@ -11,7 +11,7 @@ services:
       - 9502:9502
       - 9503:9503
     volumes:
-      - /Users/linjinjin/Documents/dnmp/www:/data/www
+      - /Users/edy/Code/php-docker:/data/www
     tty: true
     networks:
       - hyperf_networks
@@ -31,7 +31,7 @@ services:
       - hyperf_networks
 
   rabbitmq:
-    container_name: rabbit
+    container_name: rabbit-hypref
     image: rabbitmq:3.9.2
     hostname: rabbit
     restart: always
@@ -42,7 +42,7 @@ services:
       - hyperf_networks
 
   redis:
-    container_name: redis
+    container_name: redis-hypref
     image: redis:7.0
     restart: always
     hostname: redis
